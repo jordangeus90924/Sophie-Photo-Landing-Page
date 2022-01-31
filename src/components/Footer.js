@@ -61,8 +61,9 @@ function Footer() {
             <Logo className="footer__logo" />
           </Link>
           <ParagraphText className="footer__desc">
-            “Artistic” is a studio of some passionate photographer. Our Goal is
-            to capture your experience.
+            Capturing the most sensual, intimate, vulnerable, weird, and unique
+            aspects of people. Each shoot is an opportunity connect with
+            someone.
           </ParagraphText>
           <div className="footer__links">
             <ul>
@@ -89,7 +90,7 @@ function Footer() {
             </ul>
           </div>
           <ParagraphText className="footer__copyright">
-            © Artistic Creative {new Date().getFullYear()}. All rights reserved
+            © Sophie Dituri {new Date().getFullYear()}. All rights reserved
           </ParagraphText>
         </div>
       </div>

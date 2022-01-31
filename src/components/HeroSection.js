@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
+import SophieImg from '../assets/images/sophietree.jpg';
+import AmberImg from '../assets/images/amberlaying.jpg';
+import MimiImg from '../assets/images/mimi.jpg';
 import PrimaryButton from './buttons/PrimaryButton';
 import ParagraphText from './paragraphTexts/ParagraphText';
 import HeroTitle from './titles/HeroTitle';
+import themeList from '../data/themeList';
 
 const HeroSectionStyles = styled.div`
   min-height: 100vh;
@@ -12,6 +15,11 @@ const HeroSectionStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: ${({ theme: { theme } }) =>
+    theme === themeList.light ? `url(${SophieImg})` : `url(${AmberImg})`};
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   .hero__wrapper {
     display: flex;
     align-items: center;
@@ -20,34 +28,40 @@ const HeroSectionStyles = styled.div`
     gap: 1rem;
   }
   .hero__info {
-    flex: 3;
+    background-color: ${({ theme: { theme } }) =>
+      theme === themeList.light ? 'var(--lightBlue_1)' : 'var(--darkBlue_4)'};
+    padding: 5rem 3rem;
+    border-radius: 12px;
+    max-width: 500px;
   }
-  .hero__img {
-    flex: 4;
-    img {
-      object-fit: contain;
-    }
+  .hero__gap {
+    flex: 3;
   }
   .hero__title {
     margin-bottom: 1.5rem;
     max-width: 400px;
+    text-shadow: ${({ theme: { theme } }) =>
+      theme === themeList.light
+        ? `0 0 5px var(--white)`
+        : `0 0 5px var(--black)`};
   }
   .hero__desc {
     margin-bottom: 1.5rem;
     max-width: 300px;
+    text-shadow: ${({ theme: { theme } }) =>
+      theme === themeList.light
+        ? `0 0 5px var(--white)`
+        : `0 0 5px var(--black)`};
   }
   @media only screen and (max-width: 768px) {
+    background-image: ${({ theme: { theme } }) =>
+      theme === themeList.light ? `url(${SophieImg})` : `url(${MimiImg})`};
     .hero__wrapper {
-      flex-direction: column-reverse;
-      gap: 0.5rem;
+      flex-direction: column;
     }
-    .hero__img {
-      display: flex;
-      justify-content: flex-end;
-      img {
-        max-width: 400px;
-        margin-top: auto;
-      }
+    .hero__info {
+      color: var(--lightBlue_1);
+      background: none;
     }
   }
 `;
@@ -59,10 +73,10 @@ function HeroSection() {
         <div className="hero__wrapper">
           <div className="hero__info">
             <HeroTitle className="hero__title">
-              A click of artistic joy
+              Sensual &amp; Conceptual Photographer
             </HeroTitle>
             <ParagraphText className="hero__desc">
-              Because every picture tells a story, let us help you tell yours.
+              Based in Seattle, WA
             </ParagraphText>
             <PrimaryButton
               buttonType={Link}
@@ -73,9 +87,7 @@ function HeroSection() {
               Get In Touch
             </PrimaryButton>
           </div>
-          <div className="hero__img">
-            <img src={HeroImg} alt="Artistic" />
-          </div>
+          <div className="hero__gap" />
         </div>
       </div>
     </HeroSectionStyles>

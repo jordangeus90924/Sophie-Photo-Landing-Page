@@ -4,9 +4,9 @@ import ContactSection from '../components/contactSection/ContactSection';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import Header from '../components/Header';
-import NewsletterSection from '../components/NewsletterSection';
+import SocialSection from '../components/SocialSection';
 import ServicesSection from '../components/services/ServicesSection';
-import TeamSection from '../components/team/TeamSection';
+import TeamSection from '../components/work/WorkSection';
 
 function LandingPage() {
   return (
@@ -16,7 +16,7 @@ function LandingPage() {
       <ServicesSection />
       <AboutSection />
       <TeamSection />
-      <NewsletterSection />
+      <SocialSection />
       <ContactSection />
       <Footer />
     </>

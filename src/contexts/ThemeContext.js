@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react';
+import { createContext, useMemo, useReducer } from 'react';
 import themeList from '../data/themeList';
 
 const ThemeContext = createContext();
@@ -42,10 +42,14 @@ const ThemeContextProvider = ({ children }) => {
   };
 
   const [state, dispatch] = useReducer(themeReducer, initialState);
-  const value = {
-    theme: state.theme,
-    toggleTheme: () => dispatch({ type: 'TOGGLE_THEME' }),
-  };
+
+  const value = useMemo(
+    () => ({
+      theme: state.theme,
+      toggleTheme: () => dispatch({ type: 'TOGGLE_THEME' }),
+    }),
+    [state.theme]
+  );
 
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>

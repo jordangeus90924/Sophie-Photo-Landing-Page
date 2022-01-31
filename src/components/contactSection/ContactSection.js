@@ -45,8 +45,15 @@ function ContactSection() {
       <div className="container">
         <div className="contact__wrapper">
           <div className="contact__info">
-            <SectionTitle>Get In Touch</SectionTitle>
-            <ParagraphText>We would love to hear from you.</ParagraphText>
+            <SectionTitle>Contact Me</SectionTitle>
+            <ParagraphText>
+              Contact me on{' '}
+              <a href="https://www.instagram.com/direct/t/340282366841710300949128185009010648263">
+                Instagram
+              </a>{' '}
+              or here to discuss scheduling a shoot, theme ideas, shoot package
+              rates, editorials, and more.
+            </ParagraphText>
           </div>
           <form className="contact__form">
             <FormField

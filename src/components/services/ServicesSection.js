@@ -28,22 +28,22 @@ function ServicesSection() {
   return (
     <ServicesSectionStyles id="services">
       <div className="container">
-        <SectionTitle className="services__title">Our Services</SectionTitle>
+        <SectionTitle className="services__title">My Services</SectionTitle>
         <div className="services__items">
           <ServiceItem
             icon={<RiImageEditLine />}
             title="Professional Editing"
-            desc="We do professional photo editing. Let us help you to take your photo next level."
+            desc="With every session, I offer professional photo editing and retouching."
           />
           <ServiceItem
             icon={<MdPhotoCamera />}
-            title="Casual Photography"
-            desc="You can hire us for any kind of casual Photography. Book us for your next events. "
+            title="Mini &amp; Full Photoshoots"
+            desc="Indoor & outdoor shoots in the theme of your choosing: Boudoir, fashion, couples, or social media head shots."
           />
           <ServiceItem
             icon={<RiHeartsFill />}
-            title="Wedding Photography"
-            desc="Wedding is the most memorable events of our life. Let us help you to capture it."
+            title="Engagement Photography"
+            desc="Indoor & outdoor shoots with you and your fiance. LGBTQI+ friendly."
           />
         </div>
       </div>

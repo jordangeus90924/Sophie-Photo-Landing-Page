@@ -8,12 +8,10 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <>
-      <ThemeProvider theme={{ theme }}>
-        <GlobalStyles />
-        <LandingPage />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={{ theme }}>
+      <GlobalStyles />
+      <LandingPage />
+    </ThemeProvider>
   );
 }
 

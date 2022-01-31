@@ -14,7 +14,7 @@ const ThemeSwitcherStyles = styled.div`
     position: relative;
     cursor: pointer;
     border-radius: 50px;
-    background: #cfc8f4;
+    background: var(--darkBlue_1);
     z-index: 1;
     display: flex;
     align-items: center;

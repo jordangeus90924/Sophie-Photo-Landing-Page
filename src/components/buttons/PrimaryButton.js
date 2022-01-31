@@ -19,11 +19,9 @@ const ButtonsStyles = styled.a`
 
 function PrimaryButton({ children, buttonType, ...rest }) {
   return (
-    <>
-      <ButtonsStyles as={buttonType} {...rest}>
-        {children}
-      </ButtonsStyles>
-    </>
+    <ButtonsStyles as={buttonType} {...rest}>
+      {children}
+    </ButtonsStyles>
   );
 }
 
