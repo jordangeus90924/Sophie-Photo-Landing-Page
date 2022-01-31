@@ -81,7 +81,7 @@ function AboutSection() {
             </SectionTitle>
             <ParagraphText className="about__desc">
               Capturing the most sensual, intimate, vulnerable, weird, and
-              unique aspects of people. Each shoot is an opportunity connect
+              unique aspects of people. Each shoot is an opportunity to connect
               with someone.
             </ParagraphText>
             <PrimaryButton buttonType={Link} to="contact" smooth>

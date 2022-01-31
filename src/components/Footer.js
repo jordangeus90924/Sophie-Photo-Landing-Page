@@ -62,7 +62,7 @@ function Footer() {
           </Link>
           <ParagraphText className="footer__desc">
             Capturing the most sensual, intimate, vulnerable, weird, and unique
-            aspects of people. Each shoot is an opportunity connect with
+            aspects of people. Each shoot is an opportunity to connect with
             someone.
           </ParagraphText>
           <div className="footer__links">
