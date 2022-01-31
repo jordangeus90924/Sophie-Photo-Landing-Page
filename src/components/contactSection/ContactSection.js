@@ -55,7 +55,11 @@ function ContactSection() {
               rates, editorials, and more.
             </ParagraphText>
           </div>
-          <form className="contact__form">
+          <form
+            action="https://formspree.io/f/myyoeezb"
+            method="POST"
+            className="contact__form"
+          >
             <FormField
               className="contact__field--fullWidth"
               type="text"
