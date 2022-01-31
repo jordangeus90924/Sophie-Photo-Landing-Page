@@ -52,6 +52,14 @@ function ContactSection() {
               here to discuss scheduling a shoot, theme ideas, shoot package
               rates, editorials, and more.
             </ParagraphText>
+            <br />
+            <ParagraphText>$120 - Mini photoshoot (45min shoot)</ParagraphText>
+            <ParagraphText>$160 - Full photoshoot (2hr shoot)</ParagraphText>
+            <ParagraphText>$160 - Engagement photoshoot (2hr)</ParagraphText>
+            <br />
+            <ParagraphText>
+              * all shoots include editing/retouching *
+            </ParagraphText>
           </div>
           <form
             action="https://formspree.io/f/myyoeezb"
