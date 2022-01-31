@@ -67,8 +67,8 @@ const AboutStyles = styled.div`
       background: none;
       background-color: ${({ theme: { theme } }) =>
         theme === themeList.light
-          ? 'rgb(255, 255, 255, 0.2)'
-          : 'rgb(0, 0, 0, 0.2)'};
+          ? 'rgb(255, 255, 255, 0.6)'
+          : 'rgb(0, 0, 0, 0.6)'};
     }
   }
 `;
