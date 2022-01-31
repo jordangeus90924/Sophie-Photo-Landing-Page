@@ -65,6 +65,10 @@ const AboutStyles = styled.div`
     .about__info {
       color: var(--lightBlue_1);
       background: none;
+      background-color: ${({ theme: { theme } }) =>
+        theme === themeList.light
+          ? 'rgb(255, 255, 255, 0.2)'
+          : 'rgb(0, 0, 0, 0.2)'};
     }
   }
 `;
