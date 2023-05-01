@@ -5,7 +5,7 @@
   "homepage": "https://sophiedituri.art/",
   "dependencies": {
     "@fontsource/cormorant-garamond": "^4.5.10",
-    "@fontsource/gravitas-one": "^4.5.2",
+    "@fontsource/gravitas-one": "^4.5.10",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
